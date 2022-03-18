@@ -18,15 +18,7 @@ const EditPost = observer(() => {
       setTitle(res.title);
     } catch {}
   };
-  const handleEdit = async (tit?: string) => {
-    const result = await postStore.editPost({
-      title: title1,
-      id: Number(window.location.pathname.split("/")[2]),
-      body: "",
-      userId: "",
-    });
-    console.log(result);
-  };
+
   return (
     <div>
       {postStore.loading ? (

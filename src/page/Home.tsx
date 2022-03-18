@@ -12,12 +12,10 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import AlarmIcon from "@mui/icons-material/Alarm";
 import IconButton from "@mui/material/IconButton";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 const Home = observer(() => {
   const { postStore } = post.useStore();
-  const [id, setID] = useState<string>();
   const [title, setTitle] = useState<string>();
   const [open, setOpen] = useState(false);
 
